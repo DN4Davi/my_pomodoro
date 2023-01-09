@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Pomodoro</title>
+  </head>
+  <body>
+    <main>
+      <section class="focus">
+        <h2 class="title focus__title">Focus</h2>
+        <div class="circle">
+          <svg height="240" width="240">
+            <circle cx="128" cy="128" r="120"></circle>
+            <circle cx="128" cy="128" r="120" class="focus__progress"></circle>
+          </svg>
+          <div class="dot focus__dot"></div>
+          <div class="focus__center">
+            <div class="focus__timer" data-minutes="25">25:00</div>
+            <button class="focus__start">Start</button>
+          </div>
+        </div>
+      </section>
+      <section class="rest">
+        <h2 class="title rest__title">Rest</h2>
+        <div class="circle">
+          <svg height="240" width="240">
+            <circle cx="85" cy="85" r="79"></circle>
+            <circle cx="85" cy="85" r="79" class="rest__progress"></circle>
+          </svg>
+          <div class="dot rest__dot"></div>
+          <div class="rest__center">
+            <div class="rest__timer" data-minutes="5">05:00</div>
+            <button class="rest__start">Start</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
